@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box; /*menas when calculate width, factor in apdding*/
+}
+body{
+    margin:0px;
+}
+header{
+    background-color: hsl(0, 0%, 83%);
+    text-align:center;
+    padding:25px;
+}
+
+.navbar{
+    background-color:hsl(0, 0%, 10%); 
+    height:50px;
+}
+#navh1
+{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsla(0, 2%, 53%, 0.219);
+    padding:0px;
+    margin:0px;
+    overflow: hidden;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(80, 78, 78);
+}
+.navbar li{
+    float:left;
+}
+
+aside{
+    width:20%;
+    float:left;
+    padding:10px;
+}
+section{
+    width:40%;
+    float:left;
+    padding:10px;
+}
+article{
+    width:40%;
+    float:left;
+    padding:10px;
+}
+div{
+    padding:50px;
+}
+footer{
+    display:block;
+    clear:both; /*clears the float*/
+    background-color: hsl(0, 0%, 83%);
+    text-align:center;
+    padding:25px;
+}
+
+@media screen and (max-width:600px)
+{
+    aside, section, article{
+      width:100%;
+    }  
+  }
+/*if width of windows is 600px or below we can change some css properties*/
+/*knowsn as responsive CSS*/
+
+
+
+

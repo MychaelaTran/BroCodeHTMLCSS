@@ -1,0 +1,588 @@
+/*need to link to our html file*/
+
+body{
+    background-color: white;
+    display:flow-root; /*anything that is floated will not be hidden*/
+   /* background-image: url(images/background.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; makes it so it follows with scroll 
+    background-size:cover; makes so whole image takes up entire screen   */
+
+
+}
+/*for the navigation bar*/
+#navh1
+{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(136, 132, 132);
+    padding:0px;
+    margin:0px;
+    overflow: hidden;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(80, 78, 78);
+}
+.navbar li{
+    float:left;
+}
+
+
+h1{
+    color: black;
+}
+#boldtext{
+    color:aliceblue
+}
+/*if want to do for one specific element
+then you have to create an id for it in html 
+by doing id="idname" in html
+and then use #idname in css*/
+
+.even{
+    color:aquamarine
+}
+/*if want to do for all elements of a class
+then you have to create a class for it in html
+do that by doing class="classname" in html
+then call it in css by .classname*/
+#mychaela{
+    font-family: Roboto, arial; /*if cant displauy verdana, it will arial*/
+    font-size: 1.9em; /*1em is the default size so 1.1 would be bigger*/
+    font-weight: bold;
+    font-style:italic
+}
+
+#mp{
+    font-family: "lucidia console", "courier new";
+    font-size: 10px;
+}
+
+#hborder
+{
+    border:3px solid rgb(102, 202, 177); 
+    /*this is short syntax for border-style, border-width, border-color*/
+
+    /*border-style: outset;
+    border-width: 10px;
+    border-color: rgb(235, 129, 179); */
+    border-radius: 6px;
+}
+
+#pborder
+{
+    border-bottom: 5cqmin dotted rgb(161, 199, 189);
+    border-top: 2px outset rgb(175, 199, 161);
+    border-left: 2px solid rgb(197, 144, 30);
+    border-right: 4px inset rgb(5, 20, 238);
+
+    border-radius: 3px;
+}
+
+#hshawdow
+{
+    text-shadow: 3px 3px 3px rgb(95, 156, 236) , -5px -5px 5px rgb(180, 36, 36);
+    /*-horizontal and vertical shadow distance and blur and colour of shadow*/
+}
+
+#box1shadow
+{
+    width:100px;
+    height: 100px;
+    background-color: rgb(240, 233, 233) ;
+    box-shadow: 4px 3px 5px ;
+}
+#pmargin
+{
+    margin:0px
+}
+
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+
+#box1margin
+{
+    background-color: rgb(223, 142, 142);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto; /*goes to the right as u scale ur screen*/
+}
+#box2margin
+{
+    background-color: rgb(110, 111, 184);
+    margin: 50px /*scales to the middle of the screen*/
+}
+
+#floatimage
+{
+    float: left;
+    margin-right: 10px;
+}
+
+#overflowdiv
+{
+    border:2px solid;
+    height: 75px;
+    overflow: auto; /*scrolls the text with adding a bar*/
+}
+
+#divDisplay
+{
+    background-color: rgb(221, 138, 189);
+    width: 100px;
+    height: 100px;
+    display: inline; /*makes it a block element
+        inline-block makes it so inli ne but can apply width and height*/
+        visibility: hidden; /*hides the element but still takes up space*/
+}
+#spanDisplay
+{
+    background-color: rgb(37, 99, 80);
+    /*height and width will have no affect like div 
+    we can make it tho if we make it a block element
+    the space will be resreved for the block lvl element*/
+    display: block;
+    width:50px;
+    height: 200px;
+}
+*{
+    box-sizing:border-box; /*makes the padding part of the box*/
+    /* the asterisk selects all elements*/
+}
+
+.boxhw
+{
+    border: 2px solid;
+    background-color: white ;
+    padding:25px;
+    height: auto;
+    width:50%;
+    float:right;
+    text-align: center; 
+}
+
+.container{
+   background-color: grey; /*cant see bc boxes taking up whole spave*/
+   height:30vh /*means viewport height*/
+}
+
+#box2pos{
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(43, 49, 133) ;
+    top:50px;
+    left:50px;
+    position:absolute;
+     /* makes to nearest ancestor 
+     since box 2 is contained in box1, then box1
+     os its nearest ancestor
+     if box1 move, it moves with it*/
+
+}
+
+#boxpos
+{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(64, 207, 64) ;
+    position: relative;
+   /* position:sticky; web browser catches the elemnt on scroll down soimillar to fix
+    top:0px;
+   static is default element for element*/
+
+
+  /*
+    position:fixed;
+    right: 0px;  makes it fixed wherever u move screen in the top left
+    can add left:0px or bottom:0px etc to change where fixed
+    need to put the div tho at top of code*/
+ 
+ 
+   /* 
+   position:relative;
+   top:100px; pusyhed down by 100px relateive to where normallt is
+    left: 100px; pushed right by 100px relative to where normally is*/
+
+}
+
+#divcombinator
+{
+    border:2px solid;
+
+}
+#divcombinator + p{ /*> only one and two bc 3 is not a child its decesndant its nested
+                       ~ 4 and 5 are highlighted bc theyre silings ti our container
+                       but if i wrap 4 and 5 in their own div they are no longer sibligs now nieces and nepehws
+                        + makesd only 4 bc its adjacent sibling not all si blings */
+    background-color: yellow;
+}
+
+
+/*can use a:link{} for all links*/
+#pseduoGoogle
+{
+    color: rgb(152, 197, 228);
+    
+}
+#pseduoGoogle:hover
+{
+    color:blueviolet;
+    font-size:1.2em;
+}
+#pseduoGoogle:active /*when holding down on it*/
+{
+    color:rgb(255, 178, 127);
+    font-size: 1.5em;
+}
+/*when limn is visited then deault its purple can change that*/
+#pseduoGoogle:visited{
+    color:gray;
+}
+/*li:hover{
+    background-color:yellow;
+}
+li:not(hover){ /*anything not hovered will do this
+    background-color: gray;
+}
+li:nth-child(3n+1) makes all 2nd/odd elements/3n/3n+1 in li have these properiteds
+{
+    background-color: yellowgreen;
+}
+make hello on appear when hover over the hover here
+*/
+#greetingPseduo p
+{
+    background-color: rgb(119, 119, 221);
+    padding:10px;
+    display:none;
+}
+#greetingPseduo:hover p{ /*when hover over it the p sections in the div will...*/
+
+    display: block;
+}
+
+#helloPseduoElm::first-letter{
+    font-size:2em;
+    font-style:italic;
+}
+
+#pPseduoElm::first-line{
+    background-color: pink;
+}
+#pPseduoElm::selection
+{
+    color:rgb(56, 139, 17);
+    background-color: rgb(53, 45, 45);
+}
+#fruitPseduoelm li::before{
+    content: "❤️";
+    color: red;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+#fruitPseduoelm li::marker{
+    content:"🦄";
+    color: green;
+}
+#apple::after{
+    content: "🍎"
+}
+#orange::after{
+    content:"🍊"
+}
+#banana::after{
+    content:"🍌"
+}
+
+.pagination{
+    text-align:ceter;
+}
+.pagination a{
+    color:black;
+    text-decoration: none; /*the underline*/
+    padding:8px 15px;
+    display:inline-block;
+}
+.pagination a.active /*saying in pagoianton class for a alements of active class*/
+{
+    background-color: rgb(145, 206, 145);
+    font-weight: bold;
+    border-radius:5px;
+}
+.pagination a:hover:not(.active){
+    /*if hovered a nonactive class in a pagination class*/
+    background-color: rgb(125, 192, 192);
+    border-radius: 5px;
+}
+.dropdown{
+    display:inline-block; /*make so bc its div so only when hover over button now whole span*/
+}
+.dropdown button{
+    background-color: rgb(192, 189, 189);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor:pointer; /*makes so when hover over button makes it a hand*/
+
+
+}
+.dropdown a{
+    display:block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .contentDrop{
+    display:none;
+    background-color: rgb(223, 218, 218);
+    position:absolute;
+    min-width:100px;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.918);
+
+}
+.dropdown:hover .contentDrop{
+    display:block;
+}
+.dropdown:hover button{
+    background-color: rgb(80, 78, 78);
+
+}
+.dropdown a:hover{
+    background-color: rgb(121, 116, 116);
+}
+p{
+    color: black;
+}
+.gallery{
+    display:inline-block;
+    border: 1px solid hsl(0, 0%, 73%);
+    margin:5px;
+    width:200px;
+}
+.gallery .imgDes{
+    padding:10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 17%)
+}
+.gallery img{
+    width:100%;
+    height: auto;
+}
+
+.icons{
+    text-align:center;
+    margin-right: 20px;
+
+}
+.fa-solid.fa-house.fa-5x{
+    color:hsl(0, 0%, 58%);
+    margin-right: 20px;
+}
+.fa-solid.fa-house.fa-5x:hover{
+    color:hsl(0, 4%, 77%);
+    margin-right: 20px;
+}
+.fa-solid.fa-house-user.fa-5x{
+    color:hsl(320, 79%, 74%);
+    margin-right: 20px;
+}
+.fa-solid.fa-house-user.fa-5x:hover{
+    color:hsl(320, 79%, 85%);
+    margin-right: 20px;
+}
+.fa-solid.fa-image.fa-5x{
+    color:hsl(249, 61%, 41%);
+    margin-right: 20px;
+}
+.fa-solid.fa-image.fa-5x:hover{
+    color:hsl(249, 61%, 70%);
+    margin-right: 20px;
+}
+
+.fa-solid.fa-music.fa-5x{
+    color:hsl(125, 60%, 45%);
+    margin-right: 20px;
+}
+.fa-solid.fa-music.fa-5x:hover{
+    color:hsl(125, 60%, 75%);
+    margin-right: 20px;
+}
+.icons a{
+    text-decoration: none;
+}
+
+.flexboxContainer
+{
+    display:flex;
+    /*justify-content: space-evenly; */
+    border:10px solid black;
+    height: 90vh; 
+    flex-wrap: wrap;
+    /*aligns elements based on what is next to it it adjsuts based on size of screen*/
+    align-content: flex-start;
+    /*used with flex wrap to adjust vertical spacing between*/
+    column-gap: 1em;
+    /*adds gap to each column*/
+    row-gap: 1em;
+    /*same as column but row*/
+
+    /* align-items: baseline; align them on y axis*/
+
+    /*sets alignment on x-axis*/
+    /*flex-direction: column-reverse;
+    opetions are row, row-reverse, column, colun-reverse*/
+}
+.boxContainer{
+    width:150px;
+    height:150px;
+    font-size:8em;
+    text-align: center;
+    border-radius: 15px;;
+}
+#box1{
+    background-color: rgb(226, 117, 117);
+    align-self: center; /*aligns on cross axis*/
+    order:1; /*1 is end and -1 is beginign*/
+}
+#box2{
+    background-color: rgb(240, 240, 129);
+    order:-2;
+}
+#box3{
+    background-color: rgb(144, 233, 156);
+}
+#box4{
+    background-color: rgb(144, 190, 233);
+}
+/*can also do it for another html file*/
+
+
+#box1Transform
+{
+    
+    
+   /* transform: scaleX(1.1); /*also scaleY and scale(#,#)*/
+  /*  transform: skewX(100deg);
+    transform:translateX(200px); /*can us px or %*/
+ /*   transform: translateY(50px);
+    transform: translate(200px,-50px);
+
+    transform:rotateX(125deg);
+    transform:rotateZ(100deg); */
+
+    /*do all together
+    transform: translateX(100%) rotateZ(90deg) scale(0.5) skew(59deg) */
+   
+
+    background-color: rgb(147, 219, 165);
+    
+}
+.transformClass
+{
+    width:250px;
+    height:250px;
+    border: 5px solid;
+    font-size:13em;
+    text-align: center;
+    margin:0;
+
+    transform: translateX(100px) rotateZ(45deg) scale(0.5)
+
+}
+#box2Transform
+{
+    background-color: rgb(127, 197, 255);
+}
+#box3Transform{
+    background-color: rgb(226, 89, 89);
+}
+#transformIMG
+{
+    transform:translateX(100%) rotateZ(180deg) scaleX(2)
+}
+
+#boxAnimation
+{
+    width:250px;
+    height: 250px;
+    background-color: rgb(245, 134, 134);
+    font-size: 13em;
+    text-align:center;
+    animation-name: slideLeft;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*normal, alternate, reveeres, altrnate-reverse*/
+
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.02, 1.66);;
+    /* linear; steps(10), easeinot is defautk
+        or can inspect it and cpy past hte cubic bezerk*/
+
+}
+/*use keyfram ruls to create animatio*/
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
+@keyframes slideRightt{
+    to{transform: translateX(300%)}
+}
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}
+@keyframes slideDown{
+    to{transform: translateY(300%)} /*can use -300 and from to make it go down from an up point now fuirther down*/
+}
+@keyframes rotate{
+    25%{transform: rotateX(360deg)} /*can use from to or percent
+        using 50 means complete aimation at 50% dureation and then ther 50 is return back to it compleleyty */
+}
+@keyframes grow{
+    50%{transform: scale(2,2)} /*sale takes two input a width and heihgt*/
+}
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5)}
+}
+@keyframes fade{
+    50%{opacity: 0 }
+}
+@keyframes colourChange{
+    0%{background-color: aqua;}
+    20%{background-color: rgb(0, 255, 136);}
+    40%{background-color: rgb(186, 231, 135);}
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px rgb(0, 195, 255) }
+}
+#boxAnimation:hover{
+    animation-name: glow;
+    animation-duration: 3s;
+}
+#boxAnimation:active{
+    animation-name: glow;
+    animation-duration: 3s;
+}
+
+
+
+
+
+
+
