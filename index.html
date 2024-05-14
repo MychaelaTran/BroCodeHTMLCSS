@@ -1,13 +1,53 @@
 <!DOCTYPE html> <!-- indicates it is an HTML5 document -->
 <htmml> <!-- opening html tag -->
   <head> <!-- info about webpage-->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/jpg" href="dogFav.jpg">
     <!-- favicon is the icon that appears on the tab -->
     <title>I love Ed Sheeran</title> <!-- title of webpage -->
-
-  </head>
+    <link rel="stylesheet" href="style.css"> <!--this links css style sheet to this html-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ <!--how to link to google font api-->
+</head>
 
   <body> <!-- cotains visible content in webpage-->
+
+    <header style = "background-color: lightcoral;">
+        <h1>Welcome To Mychaela's Page</h1>
+        <a href="">Home</a>
+        <a href="">About Me</a>
+        <a href="">Products</a>
+        <a href="">Contact Me</a>
+        <hr>
+
+    </header>
+    <hr>
+ 
+
+    <!--navigation bar-->
+
+    <h1 id="navh1">Mychaela Tran</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Icons</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="photogallery.html">Photo Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h3>This is the home page</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum officiis reprehenderit ab. Cum dicta provident maxime qui numquam ab quos ad aliquid consequatur, explicabo quod praesentium omnis reprehenderit ipsum quia!</p>
+    </main>
+
+
+
+
+
+    <!--<div id="boxpos"></div>-->
+
     <h1>This Is An h1 Heading</h1>
     <!--defines large heading-->
 
@@ -68,11 +108,583 @@ alt = "This is a picture of Ed Sheeeran">  <!-- goof practive to add alt-->
 
  <h3> Slay!</h3>
 
-
 <img src = "images/edfunny.gif"
 alt = "Ed Sheeran Slay gif"
 height = 200>
 <!-- add the sorce path if the image isnt in direct thing-->
+
+<!--text formatting -->
+<p id="boldtext">This is <b>bold</b> text</p>
+<p  class="even">This is <i>italic</i> text</p>
+<p>This is <u>underlined</u> text</p>
+<p class="even">This is <del>deleted</del> text</p>
+<p>This is <big>big</big> text</p>
+<p class="even">This is <small>small</small> text</p>
+<p>This is <sub>subscript</sub> text</p>
+<p>This is <sup>supersciprt</sup> text</p>
+<p>This is <tt>monospaced</tt> text</p>
+<p>This is <mark style="background-color: lightpink;">highlighted</mark> text</p>
+
+<!--span and div-->
+<!-- <span> inline container to group elements for styling purposes
+     <div> block container to grpup eolements for styling purposes -->
+
+<h1><span style = "background-color: tomato">this is a span title </span></h1> <!--in line container-->
+<!--whatever is enclosed in span tags we can perfom inline css styling to-->
+
+
+<h1><div style = "background-color: cyan"> this is a div title </div></h1>
+<!-- block container, itll take up the whole width of the page -->
+
+<p><span style = "background-color: tomato">this is a span sentence</span></p>
+
+
+<p><div style = "background-color: cyan">this is a div sentence</div></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span style = "background-color: tomato">Exercitationem quisquam eveniet placeat cumque cupiditate earum nam unde ab dolore quis deserunt eligendi, facere temporibus porro magni sunt dolores, </span>veniam explicabo.</p>>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <div style = "background-color: cyan">Exercitationem quisquam eveniet placeat cumque cupiditate earum nam unde ab dolore quis deserunt eligendi, facere temporibus porro magni sunt dolores, </div>veniam explicabo.</p>>
+
+
+
+<!-- Lists-->
+
+<!--unordered like a grocery-->
+<h4>Groceries!</h4>
+
+<ul> <!--ul means unordered list  and then li means list items
+    become like an indented bullet list-->
+  <li>milk</li>
+  <li>eggs</li>
+  <li>bread</li>
+  <li>coffee supplies</li>
+    <ul>
+      <li>coffee beans</li>
+      <li>creamer</li>
+      <li> sugar</li>
+    </ul>
+</ul>
+
+<!--ordered use ol tags-->
+<h4> 
+  To do list!</h4>
+<ol>
+  <li>eat breakfast</li>
+  <li>go to class</li>
+  <li> walk the dogs!</li>
+  <li>go to work</li>
+</ol>
+
+<!--descirption made of key value pairs 
+  uses dl tags-->
+<h4>Words defeneiton!</h4>
+  <dl style = "background-color:lightgreen; border:1px solid">
+    <dt>  Ed Sheeran</dt> <!--dt creates the terms -->
+      <dd>The best singer in the whole entire world</dd> <!--dd is descriptiom defeneition-->
+    <dt>  Slay</dt>
+      <dd>girl boss</dd>
+    <dt>  Queen</dt>
+      <dd>what you are!</dd>
+  </dl>
+
+
+
+<!--tables!-->
+<h3>Store Hours</h3>
+
+<table border=""1" style="background-color:rgb(0, 0, 0)">
+  <tr align="center" style="background-color:lightblue"> <!--tr means table row-->
+    <th width="100" >Sunday</th> <!--th means table header-->
+    <th width="100">Monday</th>
+    <th width="100">Tuesday</th>
+    <th width="100">Wednesday</th>
+    <th width="100">Thursday</th>
+    <th width="100">Friday</th>
+    <th width="100">Saturday</th>
+  </tr>
+
+  <tr align="center" style="background-color:aliceblue">
+    <td>closed</td> <!-- td means table data-->
+    <td>9-5</td>
+    <td>9-5</td>
+    <td>9-5</td>
+    <td>9-5</td>
+    <td>9-8</td>
+    <td>10-2</td>
+  </tr>
+
+</table>
+<br>
+<br>
+
+<!--Buttons!-->
+
+
+  <button onclick= "doSomething()"  style="font-size:25px; 
+                background-color:gray; 
+                color:lightblue; 
+                border-radius:25px;"> <!--rouunds the corners-->
+                Click ME</button>
+
+
+<p id="greeting">hello</p>
+
+
+<script>
+  function doSomething()
+  {
+    document.getElementById("greeting").innerHTML = "Goodbye"
+
+  }
+</script>
+
+
+<!--creating a form-->
+
+<form action="index.php" method="POST" enctype="multipart/form-data">  <!--when send large date it breaks to m,ultple parts then assmbles it again -->
+  <!--action attribute sends data to tht location (backend php)
+    method is post or get : post is confidential info like ujser or pass get is for insensitive data-->
+    <label for="username">Username:</label>
+    <input type ="text" id="username" required
+      minlength="4" maxlength="12"
+      placeholder="EdSheeran">
+     <!--adding the for and id allow it for when someone clicks the username it iwll bring them to type
+    same with for visually impaired it iwll sauy out loid
+  required prompts user to put something in the box
+plaeholder gives hint on wjhat to put -->
+
+<br>
+
+<!--PASSWORD-->
+<label for="password">Password</label>
+<input type="password"
+  id="password"
+  minlength="6"
+  maxlength="12"
+  required>  <!--cant see when typing-->
+
+
+  <br>
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="edsheeran@gmaail.com">
+
+<br>
+
+<!--phone numbver-->
+<label for="phone">Phone #</label>
+<input type="tel" id="phone" placeholder="123-456-7890"
+  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--makes sure user outs it in this pattern-->
+
+
+<br>
+
+
+<!--adding a date selector-->
+<label for="bday">Birthdate:</label>
+<input type="date" id="bday" > <!--interactivge calendar-->
+
+<br>
+
+
+<!-- quantity-->
+<label for="quantity"> Quantity:</label>
+<input type ="number" id="quantity" min="0" max="99" value = "1">
+
+
+
+<!--bubble-->
+<br>
+<label for="title">title:</label> <!--radio buttons make like bubble button u choose
+  in order to make only select one bubble u have to add name attribute-->
+
+<label for="Mr.">Mr.</label>
+<input type="radio" id="Mr." value="Mr." name="title">
+
+<label for="Ms.">Ms.</label>
+<input type="radio" id="Ms." value="Ms." name="title">
+
+<label for="PhD.">PhD.</label>
+<input type="radio" id="PhD." value="PhD." name="title">
+<br>
+
+
+
+<!--dropdeown-->
+<label for="payment">Payment</label>
+<select id="payment">
+  <option value="visa">Visa</option>
+  <option value="mastercard">MasterCard</option>
+  <option value="giftcard">GiftCard</option>
+</select>
+
+<br>
+
+
+<br>
+
+<!--checkbox-->
+<label for="subscribe">Subscribe</label>
+<input type = "checkbox" id="subscribe">
+<!--AGAIN REINFIRCE THAT ADDING THE FOR AND ID MAKES IT SO WHEN CLICK THE LABEL IT DOES THE ACTION-->
+
+<br>
+
+<!--TEXT AREA-->
+<label for="comment">Comment</label>
+<textarea id="comment" rows="3" cols="25"></textarea>
+<br><br><br>
+
+
+<!--FILE SUBMISSION-->
+<label for="file">file:</label>
+<input type ="file" id="file" accept="image/png, image/jpeg"> <!--makes it so accept tose certain fle typeds-->
+<br>
+
+<br>
+      <input type = "reset">
+      <br>
+      <br>
+    <input type="submit">
+</form>
+
+
+
+
+
+
+
+
+<!--CSS-->
+
+<!--introduction-->
+
+<!-- different ways u have 
+  inline
+  internal
+  externak -->
+
+  <!--in lime-->
+
+  <h1 style="color:green  ">This is my website</h1>
+  <!--color changes font color-->
+
+  <p style="background-color: black; color:blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi debitis tempora dolorum accusamus, necessitatibus perferendis omnis placeat aliquam facilis, expedita ipsa animi dolore doloremque ipsam asperiores possimus officia culpa illum?</p>
+  <p style="color: rgb(22,91,200)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi debitis tempora dolorum accusamus, necessitatibus perferendis omnis placeat aliquam facilis, expedita ipsa animi dolore doloremque ipsam asperiores possimus officia culpa illum?</p>
+  <p style="color: aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi debitis tempora dolorum accusamus, necessitatibus perferendis omnis placeat aliquam facilis, expedita ipsa animi dolore doloremque ipsam asperiores possimus officia culpa illum?</p>
+
+<!--whatever u put in styule changers everything about that 
+ie when we change h1 to peru all h1 headings become that
+called internal-
+  <style>
+    body 
+    { 
+      background-color: lightcoral;
+    }
+    h1
+    {
+      color:peru
+    }
+
+
+  </style>
+-->
+
+
+<!--FONTS!-->
+
+<h1 id="mychaela">Mychaela Tran</h1>
+<p id="mp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis eos amet itaque fugit iusto culpa quos velit aliquid optio? Quae odit nesciunt molestiae adipisci excepturi, inventore veniam quo temporibus.</p>
+
+
+<!--borders-->
+<h1 id="hborder">Mychaela</h1>
+
+<p id="pborder">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolorum quaerat. Doloribus aliquid modi eos, velit dignissimos facilis esse saepe quod necessitatibus eum odit ipsa illum, ad mollitia quis neque.</p>
+
+
+<!--text and box shadows-->
+
+<h1 id="hshawdow">mychaelaa</h1>
+
+<div id="box1shadow"></div>
+
+
+
+
+
+<!--margins--> 
+<h1 id="hmargin">Ed Sheeran</h1>
+<p id="pmargin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis numquam sed, accusamus natus quo corrupti maxime unde, quibusdam id ipsam aspernatur perferendis? Quos doloribus veniam nam aliquam laboriosam incidunt adipisci!</p>
+
+<div class="box" id="box1margin">Box1</div>
+<div class="box" id="box2margin">Box2</div>
+
+
+
+<!--THE FLOAT PROPERYTY-->
+<!--ALLOWS other elements to flow around it-->
+
+<image src="images/edpokeon.png" id= "floatimage" height = 200px alt="Ed Sheeran" > <!--float right makes it so the text flows around it-->
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et, ea cum ipsum quia facilis ut dignissimos ex quam dolorem consectetur assumenda sint nam quidem exercitationem deserunt aliquam quasi sunt.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et, ea cum ipsum quia facilis ut dignissimos ex quam dolorem consectetur assumenda sint nam quidem exercitationem deserunt aliquam quasi sunt.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et, ea cum ipsum quia facilis ut dignissimos ex quam dolorem consectetur assumenda sint nam quidem exercitationem deserunt aliquam quasi sunt.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et, ea cum ipsum quia facilis ut dignissimos ex quam dolorem consectetur assumenda sint nam quidem exercitationem deserunt aliquam quasi sunt.</p>
+  <image src="images/edfunny.gif"  height = 200px alt="Ed Sheeran" style="float:left; margin-right: 20px;"> <!--float right makes it so the text flows around it-->
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et, ea cum ipsum quia facilis ut dignissimos ex quam dolorem consectetur assumenda sint nam quidem exercitationem deserunt aliquam quasi sunt.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et, ea cum ipsum quia facilis ut dignissimos ex quam dolorem consectetur assumenda sint nam quidem exercitationem deserunt aliquam quasi sunt.</p>
+
+
+
+
+
+
+<!--overflow property
+
+   overflow: visible; default
+    overflow: hidden; hides the overflow
+  overflow: clip; clips the overflow
+  overflow: scroll; adds a scroll bar
+  overflow: auto; adds a scroll bar if needed -->
+
+  <div id="overflowdiv">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis sunt velit recusandae est odit magnam temporibus, aperiam corporis consequuntur, nobis ipsum minus distinctio ab at veniam sequi, deleniti error?</p>
+  </div>
+
+
+
+  <!--DISPLAY PROPERTY-->
+  <!-- 
+      BLOCK LEVEL ELEMENTS
+      -takes up the whole width of the page
+      H1-H6, P, DIV, UL, OL, LI, TABLE, FORM
+
+      INLINE ELEMENTS
+      -takes up only the width of the content
+      SPAN, A, IMG, STRONG, EM, INPUT, SELECT, TEXTAREA
+  -->
+
+    <div id="divDisplay">div</div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi beatae ipsum omnis? Architecto distinctio id sequi! Similique rem beatae quae quisquam hic officia nihil nostrum. Labore commodi debitis perspiciatis?
+   
+    <span id="spanDisplay">span</span>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos illum, ducimus iusto vitae numquam soluta mollitia magni explicabo dolorum tenetur qui provident quo autem, eius sequi perspiciatis impedit, illo libero?</p>
+
+
+    <!--height and width-->
+
+  <div class="container">
+
+    <div class="boxhw" id="box1hw">
+      <h2>This is #1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid beatae recusandae maxime inventore accusantium neque fuga minima, consequuntur optio deserunt sapiente delectus laborum explicabo natus a libero, nemo eveniet earum.</p>
+    </div>
+  
+    <div class="boxhw" id="box2hw">
+      <h2>This is #2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid beatae recusandae maxime inventore accusantium neque fuga minima, consequuntur optio deserunt sapiente delectus laborum explicabo natus a libero, nemo eveniet earum.</p>
+    </div>
+  
+
+  </div>
+  
+<!--position-->
+<!--
+    relative
+    fixed
+    absolute
+    sticky
+    static
+-->
+
+<div id="boxpos">
+
+  <div id="box2pos"></div>
+
+</div>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae, tempore quod, nemo in sapiente eum quisquam consequatur quo suscipit debitis labore expedita? Ratione accusamus ex illo! Sunt, iusto vero.</p>
+
+
+
+
+<!--background images CHOOSE A HIGH RESOLURTION PHOTO
+  in body in style css-->
+
+
+<!--combinators
+  explain relation between listed selcectors
+    | = descendant
+    > = child
+    ~ = general siblib
+    + = adjacent sibling
+
+      div > p 
+      means applying css elements to any paragraph found withing div section
+  
+      -->
+
+
+      <div id="divcombinator">
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+          <p>this is #3</p>
+        </div>
+      </div>
+
+      <p>This is #4</p>
+      <p>This is #5</p>
+
+
+<!--PSEDUO CLASSES
+  KEY WORDS ADDED TO A SELECTOR
+  MODIFY BEHAVIOUR OF ELMENT 
+  IE HOVER, ACTIVE-->
+
+  <a href="https;//google.com" id="pseduoGoogle">Google</a>
+
+  <ul id="ulPseudo">
+    <li>this is #1</li>
+    <li>this is #2</li>
+    <li>this is #3</li>
+    <li>this is #4</li>
+    <li>this is #5</li>
+    <li>this is #6</li>
+    <li>this is #7</li>
+    <li>this is #8</li>
+    <li>this is #9</li>
+  </ul>
+
+  <div id="greetingPseduo">Hover here
+    <p>Hello</p>
+
+  </div>
+
+
+  <!--PSEUDO ELEMENTS-->
+<!-- these are keywords added after a selector to style specific part of element
+  selector::pseduo-element  
+  h1::first-letter    -->
+
+  <h1 id="helloPseduoElm">Hello</h1>
+
+  <p id="pPseduoElm">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi veritatis consequuntur iusto, hic blanditiis totam laudantium, exercitationem aliquid explicabo aut autem. Voluptas nobis sed id nemo amet quidem excepturi cum?</p>
+
+  <ul id="fruitPseduoelm">
+    <li id="apple">apple</li>
+    <li id="orange">orange</li>
+    <li id="banana">banana</li>
+  </ul>
+
+
+
+
+<!--pagination
+  where document is seperat4ed into pages and numbers are given
+  ie to look at results or sth -->
+
+  <h1>this is pg 1</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis. Sapiente laborum architecto numquam dolorum inventore provident ipsum ad iure perferendis sint eligendi magni quaerat id, ipsa, corporis tenetur enim?</p>
+
+  <div class="pagination">
+    <a href=""><</a>
+    <a href="index.html" class="active">1</a>
+    <a href="lyrics.html">2</a>
+    <a href="page3.html">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <a href="">></a>
+  </div>
+  <br>
+  <br>
+
+
+<!--dropdown menus-->
+<div class="dropdown">
+  <button>Food</button>
+  <div class="contentDrop">
+    <a href="">apple</a>
+    <a href="">orange</a>
+    <a href="">banana</a>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut quo laborum quia totam ducimus omnis suscipit reprehenderit reiciendis, soluta eveniet distinctio mollitia alias, quasi nostrum sed. Distinctio, autem magni.</p>
+
+</div>
+
+
+
+<!--flexbox-->
+<div class="flexboxContainer">
+  <div class="boxContainer" id="box1">1</div>
+  <div class="boxContainer" id="box2">2</div>
+  <div class="boxContainer" id="box3">3</div>
+  <div class="boxContainer" id="box4">4</div>
+  <div class="boxContainer" id="box1">1</div>
+  <div class="boxContainer" id="box2">2</div>
+  <div class="boxContainer" id="box3">3</div>
+  <div class="boxContainer" id="box4">4</div>
+</div>
+
+
+
+<!--transform property
+    rotate, scale, skew, or trasnalt-->
+
+<div class="transformClass" id = "box1Transform">hi</div>
+<div class="transformClass" id = "box2Transform">hi</div>
+<div class="transformClass" id = "box3Transform">hi</div>
+<img src = "images/edfunny.gif" id="transformIMG">
+
+
+<br>
+<br>
+
+
+<!--Animations-->
+
+<img src="images/edfunny.gif" id="boxAnimation">Hi</div>
+
+
+
+
+
+
+
+
+
+
+  <div style="clear:both;"></div> <!--clears the float so the text doesnt flow around it-->
+
+<br>
+<footer style="background-color: lightcoral;">
+  <hr>
+
+  authour: Mychaela Tran <br>
+  &copy; copyright reserved <br>
+  <small><a href="mailto:tranmychaela@gmail.com">tranmychaela@gmail.com</a></small>
+
+</footer>
+
 </body>
 
 </htmml> <!-- closing html tag -->
